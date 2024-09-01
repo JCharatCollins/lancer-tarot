@@ -7,6 +7,59 @@
   min-height: 100vh;
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 10px;
+  border-bottom: 2px solid rgba(var(--callout-border-rgb), 0.3);
+}
+
+.title h1 {
+  font-size: 5rem;
+  padding: 5px;
+}
+
+.title h3 {
+  font-style: italic;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.title h2 {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(var(--panel-rgb));
+}
+
+.panel h2 {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.panelText {
+  width: 100%;
+  background-color: rgba(var(--panel-text-rgb), 0.8);
+  padding: 10px;
+}
+
+.panelText p {
+
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -32,6 +85,40 @@
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  transition: all 0.5s ease;
+  background-color: var(--sidebar-hex);
+  padding-left: 10px;
+}
+
+.sidebarItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 100%;
+  flex: 1;
+}
+
+.sidebarItem img {
+  position: relative;
+  filter: invert(1)
+}
+
+.sidebarItem h2 {
+  white-space: nowrap;
+  filter: invert(1);
 }
 
 .code {
@@ -128,6 +215,15 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+
+  .title h2 {
+    display: none;
+  }
+
+  .title h3 {
+    display: none;
+  }
+
   .content {
     padding: 4rem;
   }
@@ -213,6 +309,10 @@
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
+  }
+
+  .sidebarHamburger img {
+    filter: invert(0)
   }
 
   .logo {

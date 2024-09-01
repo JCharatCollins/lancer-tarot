@@ -1,0 +1,87 @@
+{
+    "name": "Ruprecht Cartin",
+    "callsign": "DEATH",
+    "skill_triggers": [
+        {
+            "name": "Act Unseen or Unheard",
+            "level": 2
+        },
+        {
+            "name": "Apply Fists to Faces",
+            "level": 4
+        },
+        {
+            "name": "Take Someone Out",
+            "level": 4
+        },
+        {
+            "name": "Threaten",
+            "level": 6
+        }
+    ],
+    "gear": [
+        "Heavy Hardsuit", 
+        "Heavy Signature",
+        "Heavy A/C",
+        "Frag Grenades",
+        "Stims",
+        "Nanite Spray"
+    ],
+    "licenses": [
+        {
+            "name": "IPS-N Caliban",
+            "level": 3
+        }
+    ],
+    "core_bonuses": [
+        "Auto-Stabilizing Hardpoints"
+    ],
+    "talents": [
+        {
+            "name": "Vanguard",
+            "level": 3
+        },
+        {
+            "name": "Juggernaut",
+            "level": 2
+        },
+        {
+            "name": "Grease Monkey",
+            "level": 2
+        }
+    ],
+    "mech": {
+        "name": "BINKY",
+        "pilot_stats": [
+            2,
+            2,
+            0,
+            1
+        ],
+        "size": 0.5,
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 12,
+            "armor": 2,
+            "heat_cap": 6,
+            "repair_cap": 6,
+            "attack_bonus": 2,
+            "tech_attack_bonus": -2,
+            "limited_systems_bonus": 0,
+            "speed": 4,
+            "evasion": 10,
+            "edefense": 8,
+            "sensors": 3,
+            "save_dc": 13,
+            "weapons": [
+                "HHS-075 “Flayer” Shotgun",
+                "HHS-155 CANNIBAL (Supermassive Mod) (Auto-Stabilizing Hardpoints)"
+            ],
+            "systems": [
+                "Spike Charges",
+                "Rapid Maneuver Jets"
+            ]
+        }
+    }
+}

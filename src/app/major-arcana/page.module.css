@@ -1,0 +1,66 @@
+.frameTitle {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.frameTarotText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pilotBlock {
+    width: 80%;
+    position: relative;
+}
+
+.pilotBlock h3 {
+    z-index: 3;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.frameTarotText h2 {
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    text-shadow: 5px 0px var(--text-shadow-hex);
+    font-size: 10rem;
+    padding: 5px;
+    border-bottom: 5px solid rgba(var(--callout-border-rgb), 0.8);
+}
+
+.cardImage {
+    z-index: 2;
+    opacity: 0.8;
+    width: 20vw;
+    height: 35vw;
+    object-fit: contain;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 100vh;
+}
+
+.maContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
