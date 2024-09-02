@@ -19,14 +19,26 @@
     position: relative;
 }
 
-.pilotBlock h3 {
+.quoteHeader {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.quoteHeader h2 {
+    text-align: left;
+    font-style: italic;
+    font-size: 1rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    opacity: 0.8;
+}
+
+.pilotBlock h1 {
     z-index: 3;
     text-align: left;
-    font-family: var(--font-mono);
-    font-size: 2rem;
-    text-decoration: underline;
-    font-weight: lighter;
-    padding: 5px;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding-top: 50px;
 }
 
 .frameTarotText h2 {
@@ -45,6 +57,40 @@
     width: 20vw;
     height: 35vw;
     object-fit: contain;
+}
+
+.panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    background-color: rgb(var(--panel-rgb));
+}
+
+.panel h2 {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.panelText {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--panel-text-rgb), 1.0);
+    padding: 10px;
+}
+
+.panelText p {
+    font-size: 1.1rem;
+    font-family: var(--font-mono);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pilotAttributes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .main {

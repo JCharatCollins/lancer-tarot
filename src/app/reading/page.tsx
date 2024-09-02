@@ -7,7 +7,7 @@ import { useState } from 'react';
 const majorArcana = [
     'fool',
     'magician',
-    'high_priestess',
+    'high-priestess',
     'empress',
     'emperor',
     'hierophant',
@@ -15,9 +15,9 @@ const majorArcana = [
     'chariot',
     'strength',
     'hermit',
-    'wheel_of_fortune',
+    'wheel-of-fortune',
     'justice',
-    'hanged_man',
+    'hanged-man',
     'death',
     'temperance',
     'devil',
@@ -64,11 +64,13 @@ export default function Page() {
                             />
                         </div>
                         <div className={styles.flipCardBack}>
-                            <Image
-                                src={'/tarotcards/' + cardName.toUpperCase() + '.jpg'}
-                                alt={cardName}
-                                fill
-                            />
+                            <a href={'/major-arcana/' + cardName}>
+                                <Image
+                                    src={'/tarotcards/' + cardName.toUpperCase() + '.jpg'}
+                                    alt={cardName}
+                                    fill
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -5,6 +5,7 @@ type LeveledAttribute = {
 
 type MechData = {
     name: string,
+    quote: string,
     pilot_stats: number[],
     size: number,
     mech_stats: {

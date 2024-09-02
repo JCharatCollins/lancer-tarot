@@ -27,9 +27,48 @@ export default function PilotBlock({ callsign } : { callsign: string }) {
     
     return (
         <div className={styles.pilotBlock}>
-            <h3>
-                {pilotData?.name}
-            </h3>
+            <h1>
+              {pilotData?.name}
+            </h1>
+            <div className={styles.quoteHeader}>
+            {pilotData?.mech.quote.split('\n').map((substring) => {
+              return (
+                <h2 key={substring} className={styles.quoteHeader}>
+                  {substring}
+                </h2>
+              );
+            })}
+            </div>
+            <div className={styles.pilotAttributes}>
+              <div className={styles.panel}>
+                <h2>
+                  Skill Triggers
+                </h2>
+                {pilotData ? pilotData.skill_triggers.map((value) => {
+                  return (
+                    <div className={styles.panelText} key={value.name}>
+                      <p>{value.name + ' (+' + value.level + ')'}</p>
+                    </div>
+                  );
+                }) :
+                null}
+              </div>
+              <div className=''></div>
+              <div className={styles.panel}>
+                <h2>
+                  Talents
+                </h2>
+                {pilotData ? pilotData.talents.map((value) => {
+                  return (
+                    <div className={styles.panelText} key={value.name}>
+                      <p>{value.name + ' ' + value.level}</p>
+                    </div>
+                  );
+                }) :
+                null}
+              </div>
+              <div className=''></div>
+            </div>
         </div>
     );
 
