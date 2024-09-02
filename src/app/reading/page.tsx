@@ -7,7 +7,7 @@ import { useState } from 'react';
 const majorArcana = [
     'fool',
     'magician',
-    'high-priestess',
+    'high_priestess',
     'empress',
     'emperor',
     'hierophant',
@@ -15,9 +15,9 @@ const majorArcana = [
     'chariot',
     'strength',
     'hermit',
-    'wheel-of-fortune',
+    'wheel_of_fortune',
     'justice',
-    'hanged-man',
+    'hanged_man',
     'death',
     'temperance',
     'devil',
@@ -45,7 +45,35 @@ export default function Page() {
     const [cards, setCards] = useState<string[]>([])
 
     function getReading () {
-        setCards(getRandomSubarray(majorArcana, 3))
+        const chosen = getRandomSubarray(majorArcana, 3)
+        setCards(chosen)
+        console.log(chosen)
+        console.log(cards)
+    }
+
+    function flippableCard (cardName : string) {
+        return (
+            <div className={styles.cardOptions}>
+                <div className={styles.flipCard}>
+                    <div className={styles.flipCardInner}>
+                        <div className={styles.flipCardFront}>
+                            <Image
+                                src={'/tarotcards/cardback.jpg'}
+                                alt={'Card back'}
+                                fill
+                            />
+                        </div>
+                        <div className={styles.flipCardBack}>
+                            <Image
+                                src={'/tarotcards/' + cardName.toUpperCase() + '.jpg'}
+                                alt={cardName}
+                                fill
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
     }
 
     return (
@@ -151,7 +179,7 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            <div className={styles.getReadingContainer}>
+            <div style={cards.length === 0 ? {} : {display: 'none'}}className={styles.getReadingContainer}>
                 <button
                     className={styles.getReadingButton}
                     onClick={() => getReading()}
@@ -167,6 +195,13 @@ export default function Page() {
                     </h3>
                 </button>
             </div>
+            {cards.length > 0 ?
+            <div className={styles.cardContainer}>
+                {flippableCard(cards[0])}
+                {flippableCard(cards[1])}
+                {flippableCard(cards[2])}
+            </div>
+            : null}
         </div>
     );
 }
