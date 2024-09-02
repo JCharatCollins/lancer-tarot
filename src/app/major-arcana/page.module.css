@@ -1,3 +1,16 @@
+.compConLink {
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(var(--callout-border-rgb));
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 4px 4px 4px black; 
+}
+
+.compConLink:hover {
+    filter: brightness(1.25);
+}
+
 .frameTitle {
     z-index: 2;
     display: flex;
@@ -39,6 +52,14 @@
     font-size: 4rem;
     font-weight: bolder;
     padding-top: 50px;
+}
+
+.pilotBlock h3 {
+    z-index: 3;
+    color: rgb(var(--callout-border-rgb));
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .frameTarotText h2 {

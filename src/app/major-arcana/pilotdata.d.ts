@@ -29,6 +29,7 @@ type MechData = {
 }
 
 type PilotData = {
+    share_code: string,
     name: string,
     callsign: string,
     skill_triggers: LeveledAttribute[],

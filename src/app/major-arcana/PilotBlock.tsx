@@ -27,17 +27,22 @@ export default function PilotBlock({ callsign } : { callsign: string }) {
     
     return (
         <div className={styles.pilotBlock}>
-            <h1>
-              {pilotData?.name}
-            </h1>
+            <div>
+              <h1>
+                {pilotData?.name}
+              </h1>
+              <h3 style={{display: 'inline'}}>
+                {'SHARE CODE: ' + pilotData?.share_code}
+              </h3>
+            </div>
             <div className={styles.quoteHeader}>
-            {pilotData?.mech.quote.split('\n').map((substring) => {
-              return (
-                <h2 key={substring} className={styles.quoteHeader}>
-                  {substring}
-                </h2>
-              );
-            })}
+              {pilotData?.mech.quote.split('\n').map((substring) => {
+                return (
+                  <h2 key={substring} className={styles.quoteHeader}>
+                    {substring}
+                  </h2>
+                );
+              })}
             </div>
             <div className={styles.pilotAttributes}>
               <div className={styles.panel}>
@@ -58,14 +63,25 @@ export default function PilotBlock({ callsign } : { callsign: string }) {
                 <h2>
                   Talents
                 </h2>
-                {pilotData ? pilotData.talents.map((value) => {
-                  return (
-                    <div className={styles.panelText} key={value.name}>
-                      <p>{value.name + ' ' + value.level}</p>
-                    </div>
-                  );
-                }) :
-                null}
+                <div className={styles.panelText}>
+                  {pilotData ? pilotData.talents.map((value) => {
+                    return (
+                        <p key={value.name} style={{
+                          fontWeight: 'bold',
+                          fontSize: '1.2rem',
+                          paddingTop: '20px'
+                        }}>
+                          {value.name.toUpperCase() + ' ' + value.level}
+                        </p>
+                    );
+                  }) :
+                  null}
+                  <a href='https://compcon.app/#/compendium/talents'>
+                    <p className={styles.compConLink}>
+                      VIEW TALENT INFORMATION
+                    </p>
+                  </a>
+                </div>
               </div>
               <div className=''></div>
             </div>

@@ -2,7 +2,17 @@ import styles from './page.module.css'
 import Image from 'next/image'
 
 // :(
-const prefixes = ['HERMIT']
+const prefixes = [
+    'TOWER',
+    'HERMIT',
+    'HIEROPHANT',
+    'SUN',
+    'MOON',
+    'EMPRESS',
+    'EMPEROR',
+    'WHEEL-OF-FORTUNE',
+    'HANGED-MAN'
+]
 
 export default function FrameTitle({title} : {title: string}) {
     return (
@@ -19,8 +29,8 @@ export default function FrameTitle({title} : {title: string}) {
                 />
                 <h2>
                     {prefixes.indexOf(title) === -1 ?
-                    title :
-                    'THE ' + title}
+                    title.replace('-', ' ') :
+                    'THE ' + title.replace('-', ' ')}
                 </h2>
             </div>
         </div>
