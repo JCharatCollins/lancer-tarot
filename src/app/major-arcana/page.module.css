@@ -64,3 +64,15 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) { }
+
+/* Mobile */
+@media (max-width: 700px) { }
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) { }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) { }

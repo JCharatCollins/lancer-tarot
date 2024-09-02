@@ -15,6 +15,7 @@ export default function FrameTitle({title} : {title: string}) {
                     alt={title}
                     height={1080}
                     width={625}
+                    priority
                 />
                 <h2>
                     {prefixes.indexOf(title) === -1 ?

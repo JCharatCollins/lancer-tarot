@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: '...',
 }
 
-export default function Home() {
+export default function Page() {
   return (
     <main className={styles.main}>
       <div className={styles.title}>
