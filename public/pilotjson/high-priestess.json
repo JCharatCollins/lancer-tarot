@@ -1,0 +1,56 @@
+{
+    "share_code": "ANUYKW",
+    "name": "Flaviano Schoellkopf",
+    "callsign": "THE HIGH PRIESTESS",
+    "skill_triggers": [
+        {"name": "Charm", "level": 2},
+        {"name": "Lead or Inspire", "level": 6},
+        {"name": "Read a Situation", "level": 2},
+        {"name": "Take Control", "level": 4}
+    ],
+    "gear": [],
+    "licenses": [
+        {"name": "SSC Swallowtail", "level": 2},
+        {"name": "SSC Dusk Wing", "level": 1}
+    ],
+    "core_bonuses": ["Overpower Caliber"],
+    "talents": [
+        {"name": "Spotter", "level": 3},
+        {"name": "Crack Shot", "level": 2},
+        {"name": "Leader", "level": 1}
+    ],
+    "mech": {
+        "name": "AKASHA",
+        "frame": "SSC Swallowtail",
+        "quote": "\"If you could see your whole life from start to finish, would you change things?\" \n-Louise Banks (Amy Adams), Arrival",
+        "pilot_stats": [3, 0, 2, 0],
+        "size": 1,
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 16,
+            "armor": 0,
+            "heat_cap": 4,
+            "repair_cap": 6,
+            "attack_bonus": 2,
+            "tech_attack_bonus": 3,
+            "limited_systems_bonus": 0,
+            "speed": 6,
+            "evasion": 10,
+            "edefense": 12,
+            "sensors": 20,
+            "save_dc": 12,
+            "weapons": [
+                "Veil Rifle (Overpower Caliber)",
+                "Oracle LMG-I",
+                "Oracle LMG-I"
+            ],
+            "systems": [
+                "Lotus Projector",
+                "Markerlight",
+                "Neurospike",
+                "Personalizations"
+            ]
+        }
+    }
+}

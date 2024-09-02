@@ -1,0 +1,65 @@
+{
+    "share_code": "F82YQY",
+    "name": "Raman Nath",
+    "callsign": "THE FOOL",
+    "skill_triggers": [
+        {"name": "Apply Fists to Faces", "level": 4},
+        {"name": "Read a Situation", "level": 2},
+        {"name": "Survive", "level": 4},
+        {"name": "Word on the Street", "level": 4}
+    ],
+    "gear": [
+        "Light Hardsuit",
+        "Medium Signature",
+        "Light Signature",
+        "Stims",
+        "Corrective",
+        "Frag Grenades"
+    ],
+    "licenses": [
+        {"name": "HORUS Pegasus", "level": 1},
+        {"name": "IPS-N Tortuga", "level": 1},
+        {"name": "SSC Metalmark", "level": 1}
+    ],
+    "core_bonuses": ["Auto-Stabilizing Hardpoints"],
+    "talents": [
+        {"name": "Heavy Gunner", "level": 3},
+        {"name": "Spaceborn", "level": 1},
+        {"name": "Vanguard", "level": 1},
+        {"name": "Demolitionist", "level": 1}
+    ],
+    "mech": {
+        "name": "UNNUMBERED",
+        "frame": "GMS Everest",
+        "quote": "Everyone starts somewhere. Some never leave.",
+        "pilot_stats": [3, 2, 0, 0],
+        "size": 1,
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 18,
+            "armor": 0,
+            "heat_cap": 6,
+            "repair_cap": 6,
+            "attack_bonus": 2,
+            "tech_attack_bonus": 0,
+            "limited_systems_bonus": 0,
+            "speed": 5,
+            "evasion": 10,
+            "edefense": 8,
+            "sensors": 10,
+            "save_dc": 12,
+            "weapons": [
+                "Smartgun",
+                "Deck-Sweeper Automatic Shotgun",
+                "Heavy Machine Gun (Auto-Stabilizing Hardpoints)"
+            ],
+            "systems": [
+                "Spaceborn EVA",
+                "Flash Charges",
+                "Siege Ram",
+                "Pattern-B HEX Charges"
+            ]
+        }
+    }
+}

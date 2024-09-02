@@ -11,7 +11,9 @@ const prefixes = [
     'EMPRESS',
     'EMPEROR',
     'WHEEL-OF-FORTUNE',
-    'HANGED-MAN'
+    'HANGED-MAN',
+    'HIGH-PRIESTESS',
+    'FOOL'
 ]
 
 export default function FrameTitle({title} : {title: string}) {
