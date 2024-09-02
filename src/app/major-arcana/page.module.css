@@ -20,11 +20,22 @@
     padding: 5px;
 }
 
-.frameTarotText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.frameTitle h2 {
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    text-shadow: 5px 0px var(--text-shadow-hex);
+    font-size: 10rem;
+    padding: 5px;
+    border-bottom: 5px solid rgba(var(--callout-border-rgb), 0.8);
+}
+
+.cardImage {
+    z-index: 2;
+    opacity: 0.8;
+    width: 20vw;
+    height: auto;
+    object-fit: contain;
 }
 
 .pilotBlock {
@@ -62,24 +73,6 @@
     font-weight: bolder;
 }
 
-.frameTarotText h2 {
-    z-index: 3;
-    position: absolute;
-    text-align: center;
-    text-shadow: 5px 0px var(--text-shadow-hex);
-    font-size: 10rem;
-    padding: 5px;
-    border-bottom: 5px solid rgba(var(--callout-border-rgb), 0.8);
-}
-
-.cardImage {
-    z-index: 2;
-    opacity: 0.8;
-    width: 20vw;
-    height: 35vw;
-    object-fit: contain;
-}
-
 .panel {
     width: 100%;
     display: flex;
@@ -114,6 +107,74 @@
     gap: 20px;
 }
 
+.pilotGear {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pilotGear h2 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+.pilotEquipment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.pilotItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.equipmentItem {
+    width: 100%;
+    position: relative;
+    background-color: rgba(var(--panel-text-rgb), 0.5);
+    border-top: 5px solid rgba(var(--callout-border-rgb), 0.8);
+}
+
+.equipmentItem p {
+    font-size: 1.1rem;
+    font-family: var(--font-mono);
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.coreBonusContainer {
+    position: relative;
+}
+
+.coreBonusContainer h2 {
+    z-index: 3;
+    text-align: left;
+    text-shadow: 5px 0px var(--text-shadow-hex);
+    font-size: 2rem;
+    padding: 5px;
+    border-bottom: 5px solid rgba(var(--callout-border-rgb), 0.8);
+}
+
+.coreBonus {
+    width: 100%;
+}
+
+.coreBonus h3 {
+    z-index: 3;
+    padding-top: 5px;
+    color: rgb(var(--callout-border-rgb));
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -124,7 +185,6 @@
 }
 
 .maContainer {
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -136,7 +196,16 @@
 @media (hover: hover) and (pointer: fine) { }
 
 /* Mobile */
-@media (max-width: 700px) { }
+@media (max-width: 700px) { 
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        min-height: 100vh;
+    }
+}
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) { }

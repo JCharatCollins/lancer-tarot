@@ -31,7 +31,7 @@ export default function Sidebar() {
                     />
                 </a>
                 {isCurrent ?
-                <h2 style={sidebarOpen ? { display: 'inline'} : {display: 'none'}}>
+                <h2 style={sidebarOpen ? { display: 'block'} : {display: 'none'}}>
                     <a href={link}>
                         {text}
                     </a>

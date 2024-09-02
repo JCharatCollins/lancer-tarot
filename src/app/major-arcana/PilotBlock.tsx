@@ -58,7 +58,6 @@ export default function PilotBlock({ callsign } : { callsign: string }) {
                 }) :
                 null}
               </div>
-              <div className=''></div>
               <div className={styles.panel}>
                 <h2>
                   Talents
@@ -83,7 +82,43 @@ export default function PilotBlock({ callsign } : { callsign: string }) {
                   </a>
                 </div>
               </div>
-              <div className=''></div>
+            </div>
+            <div className={styles.pilotGear}>
+              <h2>
+                PILOT EQUIPMENT
+              </h2>
+              <div className={styles.pilotEquipment}>
+                {pilotData?.gear.slice(0,3).map((value) => {
+                  return (
+                    <div key={value} className={styles.equipmentItem}>
+                      <p>
+                        {value}
+                      </p>
+                    </div> 
+                  );
+                })}
+              </div>
+              <div className={styles.pilotItems}>
+                {pilotData?.gear.slice(3).map((value) => {
+                  return (
+                    <div key={value} className={styles.equipmentItem}>
+                      <p>
+                        {value}
+                      </p>
+                    </div> 
+                  );
+                })}
+              </div>
+            </div>
+            <div className={styles.coreBonusContainer}>
+              <h2>
+                CORE BONUS
+              </h2>
+              <div className={styles.coreBonus}>
+                <h3>
+                  {pilotData?.core_bonuses[0]}
+                </h3>
+              </div>
             </div>
         </div>
     );

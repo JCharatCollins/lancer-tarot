@@ -1,5 +1,6 @@
 'use client'
 
+import Head from 'next/head';
 import styles from './page.module.css'
 import Image from 'next/image'
 import { useState } from 'react';
@@ -54,13 +55,14 @@ export default function Page() {
     function flippableCard (cardName : string) {
         return (
             <div className={styles.cardOptions}>
-                <div className={styles.flipCard}>
+                <div className={styles.flipCard} tabIndex={1}>
                     <div className={styles.flipCardInner}>
                         <div className={styles.flipCardFront}>
                             <Image
                                 src={'/tarotcards/cardback.jpg'}
                                 alt={'Card back'}
                                 fill
+                                priority
                             />
                         </div>
                         <div className={styles.flipCardBack}>
@@ -80,6 +82,13 @@ export default function Page() {
 
     return (
         <div className={styles.main}>
+            <Head>
+                <link
+                    rel="preload"
+                    href="/tarotcards/cardback.jpg"
+                    as="image"
+                />
+            </Head>
             <div className={styles.title}>
                 <h3>
                     In order to join the Shuffle Alliance, you must first...

@@ -18,23 +18,20 @@ const prefixes = [
 
 export default function FrameTitle({title} : {title: string}) {
     return (
-
         <div className={styles.frameTitle}>
-            <div className={styles.frameTarotText}>
-                <Image
-                    className={styles.cardImage}
-                    src={'/tarotcards/' + title + '.jpg'}
-                    alt={title}
-                    height={1080}
-                    width={625}
-                    priority
-                />
-                <h2>
-                    {prefixes.indexOf(title) === -1 ?
-                    title.replace('-', ' ') :
-                    'THE ' + title.replace('-', ' ')}
-                </h2>
-            </div>
+            <Image
+                className={styles.cardImage}
+                src={'/tarotcards/' + title + '.jpg'}
+                alt={title}
+                height={1080}
+                width={625}
+                priority
+            />
+            <h2>
+                {prefixes.indexOf(title) === -1 ?
+                title.replace('-', ' ') :
+                'THE ' + title.replace('-', ' ')}
+            </h2>
         </div>
     );
 }
