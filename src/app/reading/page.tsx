@@ -196,10 +196,15 @@ export default function Page() {
                 </button>
             </div>
             {cards.length > 0 ?
-            <div className={styles.cardContainer}>
-                {flippableCard(cards[0])}
-                {flippableCard(cards[1])}
-                {flippableCard(cards[2])}
+            <div>
+                <div className={styles.cardContainer}>
+                    {flippableCard(cards[0])}
+                    {flippableCard(cards[1])}
+                    {flippableCard(cards[2])}
+                </div>
+                <div className={styles.cardExplanations}>
+
+                </div>
             </div>
             : null}
         </div>
