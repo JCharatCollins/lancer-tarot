@@ -101,6 +101,25 @@
     padding-bottom: 5px;
 }
 
+.licensesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.license {
+    border-radius: 20px;
+    padding: 15px;
+    border: 5px solid rgb(var(--callout-border-rgb));
+}
+
+.license h3 {
+    color: white;
+}
+
 .pilotAttributes {
     display: flex;
     flex-direction: row;
@@ -169,10 +188,51 @@
 .coreBonus h3 {
     z-index: 3;
     padding-top: 5px;
+    padding-bottom: 5px;
     color: rgb(var(--callout-border-rgb));
     text-align: left;
     font-size: 2rem;
     font-weight: bolder;
+}
+
+.mechBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 5px solid rgba(var(--callout-border-rgb), 0.8);
+    width: 80%;
+}
+
+.mechTitle {
+    position: relative;
+    width: 100%;
+    border-bottom: 5px solid white;
+}
+
+.mechTitle h1 {
+    font-size: 5rem;
+    text-align: left;
+}
+
+.mechTitle h2 {
+    font-size: 1.5rem;
+}
+
+.haseBlock {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    gap: 20px;
+}
+
+.haseBlock {
+
 }
 
 .main {
