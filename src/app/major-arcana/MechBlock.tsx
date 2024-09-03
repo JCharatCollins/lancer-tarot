@@ -1,4 +1,5 @@
 import styles from './page.module.css'
+import Image from 'next/image'
 
 
 export default function MechBlock({ mechData } : {mechData: MechData}) {
@@ -76,13 +77,61 @@ export default function MechBlock({ mechData } : {mechData: MechData}) {
                     {MechStatBlock('SAVE DC', mechData.mech_stats.save_dc)}
                 </div>
             </div>
-            <div className={styles.coreSystem}>
-                <h3 style={{fontSize: '2rem', textShadow: '0 0 0'}}>
-                    CORE SYSTEM:
-                </h3>
-                <h3>
-                    {mechData.core_system}
-                </h3>
+            <div className={styles.frameImageContainer}>
+                <Image
+                    className={styles.frameImage}
+                    src={'/frames/' + mechData.frame + '.png'}
+                    alt={mechData.frame}
+                    fill
+                />
+                <div className={styles.coreSystem}>
+                    <h3 style={{fontSize: '1.5rem', textShadow: '0px 0px 15px black'}}>
+                        CORE SYSTEM:
+                    </h3>
+                    <h3>
+                        {mechData.core_system}
+                    </h3>
+                </div>
+            </div>
+            <div className={styles.mechWeapons}>
+                {mechData.mech_stats.weapons.map((value) => {
+                    const components = value.split('\n');
+
+                    return (
+                        <div key={value} className={styles.mechWeaponBlock}>
+                            <h2>
+                                {components[0].toUpperCase()}
+                            </h2>
+                            {components.slice(1).map((mod) => {
+                                return (
+                                    <h3 key={mod}>
+                                        {mod.toUpperCase()}
+                                    </h3>
+                                );
+                            })}
+                        </div>
+                    );
+                })}
+            </div>
+            <div className={styles.mechSystems}>
+                {mechData.mech_stats.systems.map((value) => {
+                    const components = value.split('\n');
+
+                    return (
+                        <div key={value} className={styles.mechSystemBlock}>
+                            <h2>
+                                {components[0].toUpperCase()}
+                            </h2>
+                            {components.slice(1).map((mod) => {
+                                return (
+                                    <h3 key={mod}>
+                                        {mod.toUpperCase()}
+                                    </h3>
+                                );
+                            })}
+                        </div>
+                    );
+                })}
             </div>
         </div>
     );
