@@ -9,6 +9,7 @@ type MechData = {
     quote: string,
     pilot_stats: number[],
     size: number,
+    core_system: string,
     mech_stats: {
         structure: number,
         stress: number,

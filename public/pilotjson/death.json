@@ -62,6 +62,7 @@
             1
         ],
         "size": 0.5,
+        "core_system": "Flayer Shotgun",
         "mech_stats": {
             "structure": 4,
             "stress": 4,

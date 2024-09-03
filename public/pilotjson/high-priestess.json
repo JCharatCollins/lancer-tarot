@@ -25,6 +25,7 @@
         "quote": "\"If you could see your whole life from start to finish, would you change things?\" \n-Louise Banks (Amy Adams), Arrival",
         "pilot_stats": [3, 0, 2, 0],
         "size": 1,
+        "core_system": "",
         "mech_stats": {
             "structure": 4,
             "stress": 4,

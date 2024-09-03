@@ -34,6 +34,7 @@
         "quote": "Everyone starts somewhere. Some never leave.",
         "pilot_stats": [3, 2, 0, 0],
         "size": 1,
+        "core_system": "",
         "mech_stats": {
             "structure": 4,
             "stress": 4,
