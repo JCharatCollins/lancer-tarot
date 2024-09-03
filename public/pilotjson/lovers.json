@@ -1,0 +1,65 @@
+{
+    "share_code": "KBLF9U",
+    "name": "Yousra Dau",
+    "callsign": "THE LOVERS",
+    "skill_triggers": [
+        { "name": "Charm", "level": 6 },
+        { "name": "Get a Hold of Something", "level": 2 },
+        { "name": "Read a Situation", "level": 2 },
+        { "name": "Take Control", "level": 4 }
+    ],
+    "gear": [
+        "Stealth Hardsuit",
+        "Archaic Ranged",
+        "Heavy Signature",
+        "Dataplating",
+        "Sound System",
+        "Omnihook"
+    ],
+    "licenses": [
+        { "name": "HORUS Goblin", "level": 3 }
+    ],
+    "core_bonuses": [
+        "The Lesson of the Held Image"
+    ],
+    "talents": [
+        { "name": "Iconoclast", "level": 3 },
+        { "name": "Spotter", "level": 1 },
+        { "name": "House Guard", "level": 1 },
+        { "name": "Bonded", "level": 1 }
+    ],
+    "mech": {
+        "name": "COCHINEAL",
+        "frame": "HORUS Goblin",
+        "quote": "\"I love you. I love you. I love you. I'll write it in waves. In skies. In my heart. You'll never see, but you will know. I'll be all the poets, I'll kill them all and take each one's place in turn, and every time love's written in all the strands it will be to you.\"\n-Amal El-Mohtar & Max Gladstone, This Is How You Lose the Time War",
+        "pilot_stats": [3, 0, 2, 0],
+        "size": 0.5,
+        "core_system": "INSTINCT Rig",
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 14,
+            "armor": 0,
+            "heat_cap": 4,
+            "repair_cap": 3,
+            "attack_bonus": 2,
+            "tech_attack_bonus": 4,
+            "limited_systems_bonus": 0,
+            "speed": 5,
+            "evasion": 10,
+            "edefense": 14,
+            "sensors": 20,
+            "save_dc": 13,
+            "weapons": [
+                "Autopod"
+            ],
+            "systems": [
+                "OSIRIS-Class NHP",
+                "Metahook",
+                "H0R_OS System Upgrade I",
+                "H0R_OS System Upgrade II",
+                "Manipulators"
+            ]
+        }
+    }
+}

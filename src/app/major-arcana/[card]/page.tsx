@@ -32,6 +32,14 @@ export default function Page({ params }: { params: { card: string } }) {
 
     return (
         <div className={styles.main}>
+            <Image
+                className={styles.cardImage}
+                src={'/tarotcards/' + params.card.toUpperCase() + '.jpg'}
+                alt={params.card.toUpperCase()}
+                height={1080}
+                width={625}
+                priority
+            />
             <div className={styles.maContainer}>
                 <FrameTitle title={params.card.toUpperCase()} />
                 {pilotData ? 

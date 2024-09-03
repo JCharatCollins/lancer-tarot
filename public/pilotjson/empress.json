@@ -1,0 +1,66 @@
+{
+    "share_code": "HUWPNT",
+    "name": "Jin Xuan Terepka",
+    "callsign": "THE EMPRESS",
+    "skill_triggers": [
+        {"name": "Lead or Inspire", "level": 2},
+        {"name": "Pull Rank", "level": 2},
+        {"name": "Spot", "level": 4},
+        {"name": "Stay Cool", "level": 4},
+        {"name": "Take Control", "level": 2}
+    ],
+    "gear": [
+        "Heavy Hardsuit",
+        "Heavy Signature",
+        "Light Signature",
+        "Infoskin",
+        "Personal Drone",
+        "Wilderness Survival Kit"
+    ],
+    "licenses": [
+        {"name": "SSC Emperor", "level": 3}
+    ],
+    "core_bonuses": [
+        "Superheavy Mounting"
+    ],
+    "talents": [
+        {"name": "Leader", "level": 3},
+        {"name": "Stormbringer", "level": 2},
+        {"name": "Executioner", "level": 1}
+    ],
+    "mech": {
+        "name": "SEFIROT",
+        "frame": "SSC Emperor",
+        "quote": "\"The power to destroy a thing is the absolute control over it.\"\n-Frank Herbert, Dune",
+        "pilot_stats": [3, 2, 0, 0],
+        "size": 1,
+        "core_system": "Darian Regalia",
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 10,
+            "armor": 0,
+            "heat_cap": 5,
+            "repair_cap": 3,
+            "attack_bonus": 2,
+            "tech_attack_bonus": 1,
+            "limited_systems_bonus": 0,
+            "speed": 6,
+            "evasion": 12,
+            "edefense": 8,
+            "sensors": 15,
+            "save_dc": 13,
+            "weapons": [
+                "Marathon Arc Bow",
+                "Tempest Charged Blade"
+            ],
+            "systems": [
+                "The Walk of Kings",
+                "Āyah of the Syzygy",
+                "The Imperial Eye",
+                "Armament Redundancy",
+                "Personalizations"
+            ]
+        }
+    }
+}

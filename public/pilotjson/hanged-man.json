@@ -1,0 +1,64 @@
+{
+    "share_code": "ELPG24",
+    "name": "Dong Joon Kubeika",
+    "callsign": "THE HANGED MAN",
+    "skill_triggers": [
+      { "name": "Act Unseen or Unheard", "level": 4 },
+      { "name": "Investigate", "level": 4 },
+      { "name": "Read a Situation", "level": 4 },
+      { "name": "Survive", "level": 2 }
+    ],
+    "gear": [
+      "Light Hardsuit",
+      "Archaic Melee",
+      "Archaic Ranged",
+      "Thermite Charge",
+      "Corrective",
+      "Camo Cloth"
+    ],
+    "licenses": [
+      { "name": "HORUS Manticore", "level": 3 }
+    ],
+    "core_bonuses": [
+      "The Lesson of the Open Door"
+    ],
+    "talents": [
+      { "name": "Nuclear Cavalier", "level": 3 },
+      { "name": "Vanguard", "level": 3 }
+    ],
+    "mech": {
+      "name": "THIRTY PIECES",
+      "frame": "HORUS Manticore",
+      "quote": "\"Hoom... Young man, I am dead. I was killed in what, for me at least, were fairly unpleasant circumstances. It hurt. It was deeply upsetting, and painful. However, it happened. I am dead. If you bring me back to life, my death will have no meaning. I had a fine existence. I was a good place. I spent a little time walking the waking world. I even fell in love, once, a little. I lived a good life and it ended. Would you take that away from me?\"\n-Fiddler's Green, Neil Gaiman, The Sandman",
+      "pilot_stats": [2, 0, 1, 2],
+      "size": 1,
+      "core_system": "Charged Exoskeleton",
+      "mech_stats": {
+        "structure": 4,
+        "stress": 4,
+        "hp": 14,
+        "armor": 2,
+        "heat_cap": 9,
+        "repair_cap": 4,
+        "attack_bonus": 2,
+        "tech_attack_bonus": 2,
+        "limited_systems_bonus": 1,
+        "speed": 3,
+        "evasion": 6,
+        "edefense": 11,
+        "sensors": 10,
+        "save_dc": 14,
+        "weapons": [
+          "Fuel Rod Gun",
+          "Catalyst Pistol // Catalyst Pistol",
+          "Arc Projector"
+        ],
+        "systems": [
+          "Beckoner",
+          "Lightning Generator",
+          "Smite"
+        ]
+      }
+    }
+  }
+  

@@ -1,0 +1,65 @@
+{
+    "share_code": "Z6MLE3",
+    "name": "Sascha Alexander Curreri",
+    "callsign": "THE DEVIL",
+    "skill_triggers": [
+        { "name": "Charm", "level": 6 },
+        { "name": "Lead or Inspire", "level": 2 },
+        { "name": "Read a Situation", "level": 2 },
+        { "name": "Threaten", "level": 4 }
+    ],
+    "gear": [
+        "Stealth Hardsuit",
+        "Medium A/C",
+        "Light Signature",
+        "Tertiary Arm",
+        "Camo Cloth",
+        "Stims"
+    ],
+    "licenses": [
+        { "name": "HORUS Balor", "level": 3 }
+    ],
+    "core_bonuses": [
+        "The Lesson of Thinking-Tomorrow's-Thought"
+    ],
+    "talents": [
+        { "name": "Nuclear Cavalier", "level": 3 },
+        { "name": "Pankrati", "level": 2 },
+        { "name": "Executioner", "level": 1 }
+    ],
+    "mech": {
+        "name": "THE ONE YOU DON'T",
+        "frame": "HORUS Balor",
+        "quote": "\"No, there are no special places in hell. Hell is a democracy.\"\n-Michael Carey, Lucifer: Children and Monsters",
+        "pilot_stats": [1, 2, 0, 2],
+        "size": 2,
+        "core_system": "Hellswarm",
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 16,
+            "armor": 0,
+            "heat_cap": 6,
+            "repair_cap": 4,
+            "attack_bonus": 2,
+            "tech_attack_bonus": 1,
+            "limited_systems_bonus": 1,
+            "speed": 4,
+            "evasion": 8,
+            "edefense": 10,
+            "sensors": 5,
+            "save_dc": 12,
+            "weapons": [
+                "Fuel Rod Gun",
+                "Swarm/Hive Nanites",
+                "Nanobot Whip"
+            ],
+            "systems": [
+                "Scanner Swarm",
+                "Swarm Body",
+                "Hive Drone",
+                "Armament Redundancy"
+            ]
+        }
+    }
+}

@@ -13,24 +13,19 @@ const prefixes = [
     'WHEEL-OF-FORTUNE',
     'HANGED-MAN',
     'HIGH-PRIESTESS',
-    'FOOL'
+    'FOOL',
+    'MAGICIAN',
+    'CHARIOT',
+    'DEVIL'
 ]
 
 export default function FrameTitle({title} : {title: string}) {
     return (
         <div className={styles.frameTitle}>
-            <Image
-                className={styles.cardImage}
-                src={'/tarotcards/' + title + '.jpg'}
-                alt={title}
-                height={1080}
-                width={625}
-                priority
-            />
             <h2>
                 {prefixes.indexOf(title) === -1 ?
                 title.replace('-', ' ') :
-                'THE ' + title.replace('-', ' ')}
+                'THE ' + title.replaceAll('-', ' ')}
             </h2>
         </div>
     );

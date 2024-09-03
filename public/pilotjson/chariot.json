@@ -1,0 +1,65 @@
+{
+    "share_code": "KDEIO8",
+    "name": "Charlotte Caruso",
+    "callsign": "THE CHARIOT",
+    "skill_triggers": [
+        { "name": "Apply Fists to Faces", "level": 4 },
+        { "name": "Assault", "level": 4 },
+        { "name": "Blow Something Up", "level": 2 },
+        { "name": "Show Off", "level": 2 },
+        { "name": "Threaten", "level": 2 }
+    ],
+    "gear": [
+        "Mobility Hardsuit",
+        "Medium Signature",
+        "Heavy Signature",
+        "Frag Grenades",
+        "Stims",
+        "Sound System"
+    ],
+    "licenses": [
+        { "name": "IPS-N Nelson", "level": 3 }
+    ],
+    "core_bonuses": [
+        "Sloped Plating"
+    ],
+    "talents": [
+        { "name": "Hunter", "level": 3 },
+        { "name": "Duelist", "level": 2 },
+        { "name": "Grease Monkey", "level": 1 }
+    ],
+    "mech": {
+        "name": "CHROME-WHEELED, FUEL-INJECTED",
+        "frame": "IPS-N Nelson",
+        "quote": "\"I've got this burning like my veins are filled with nothing but gasoline /\nAnd with a spark it's gonna be the biggest fire they've ever seen\"\n-Joe (Raul Panther III), The Protomen Act II: Father of Death",
+        "pilot_stats": [2, 3, 0, 0],
+        "size": 1,
+        "core_system": "Perpetual Momentum Drive",
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 16,
+            "armor": 1,
+            "heat_cap": 6,
+            "repair_cap": 6,
+            "attack_bonus": 2,
+            "tech_attack_bonus": 0,
+            "limited_systems_bonus": 0,
+            "speed": 6,
+            "evasion": 14,
+            "edefense": 7,
+            "sensors": 5,
+            "save_dc": 12,
+            "weapons": [
+                "Mortar",
+                "War Pike // Power Knuckles \n(Thermal Charge)"
+            ],
+            "systems": [
+                "Bulwark Mods",
+                "Ramjet",
+                "Armor-Lock Plating",
+                "Personalizations"
+            ]
+        }
+    }
+}

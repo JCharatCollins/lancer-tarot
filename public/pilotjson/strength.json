@@ -1,0 +1,69 @@
+{
+    "share_code": "ETAVK9",
+    "name": "Anania Goodaker",
+    "callsign": "STRENGTH",
+    "skill_triggers": [
+        {"name": "Get Somewhere Quickly", "level": 2},
+        {"name": "Hack or Fix", "level": 4},
+        {"name": "Invent or Create", "level": 4},
+        {"name": "Patch", "level": 2},
+        {"name": "Word on the Street", "level": 2}
+    ],
+    "gear": [
+        "Heavy Hardsuit",
+        "Heavy A/C",
+        "Medium Signature",
+        "Handheld Printer",
+        "Corrective",
+        "Personal Drone"
+    ],
+    "licenses": [
+        {"name": "IPS-N Lancaster", "level": 2},
+        {"name": "IPS-N Kidd", "level": 1}
+    ],
+    "core_bonuses": [
+        "Auto-Stabilizing Hardpoints"
+    ],
+    "talents": [
+        {"name": "Centimane", "level": 3},
+        {"name": "Crack Shot", "level": 1},
+        {"name": "Bonded", "level": 1},
+        {"name": "Spotter", "level": 1}
+    ],
+    "mech": {
+        "name": "LION TAMER",
+        "frame": "IPS-N Lancaster",
+        "quote": "\"What a piece of work is a man!\"\n-Hamlet, William Shakespeare",
+        "pilot_stats": [3, 2, 0, 0],
+        "size": 2,
+        "core_system": "Latch Drone",
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 16,
+            "armor": 1,
+            "heat_cap": 6,
+            "repair_cap": 11,
+            "attack_bonus": 2,
+            "tech_attack_bonus": 1,
+            "limited_systems_bonus": 0,
+            "speed": 7,
+            "evasion": 10,
+            "edefense": 8,
+            "sensors": 8,
+            "save_dc": 12,
+            "weapons": [
+                "Latch Drone",
+                "Blackspot Targeting Laser",
+                "Nexus (Light)"
+            ],
+            "systems": [
+                "PEBCAC",
+                "Whitewash Sealant Spray",
+                "Restock Drone",
+                "MULE Harness",
+                "Personalizations"
+            ]
+        }
+    }
+}

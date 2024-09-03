@@ -1,0 +1,67 @@
+{
+    "share_code": "G6SEPI",
+    "name": "Assia Serven",
+    "callsign": "THE HIEROPHANT",
+    "skill_triggers": [
+      { "name": "Blow Something Up", "level": 4 },
+      { "name": "Charm", "level": 4 },
+      { "name": "Lead or Inspire", "level": 4 },
+      { "name": "Pull Rank", "level": 2 }
+    ],
+    "gear": [
+      "Heavy Hardsuit",
+      "Heavy Signature",
+      "Medium Signature",
+      "Frag Grenades",
+      "Corrective",
+      "Patch"
+    ],
+    "licenses": [
+      { "name": "SSC Monarch", "level": 2 },
+      { "name": "SSC Swallowtail", "level": 1 }
+    ],
+    "core_bonuses": [
+      "All-Theater Movement Suite"
+    ],
+    "talents": [
+      { "name": "Ace", "level": 2 },
+      { "name": "Nuclear Cavalier", "level": 2 },
+      { "name": "Stormbringer", "level": 2 }
+    ],
+    "mech": {
+      "name": "ANGEL OF THE EASTERN GATE",
+      "frame": "SSC Monarch",
+      "quote": "Then the angel said to her, \"Do not be afraid, Mary, for you have found favor with God.\"\n-Luke 1:30",
+      "pilot_stats": [3, 0, 0, 2],
+      "size": 2,
+      "core_system": "SSC-30 High-Penetration Missile System",
+      "mech_stats": {
+        "structure": 4,
+        "stress": 4,
+        "hp": 16,
+        "armor": 1,
+        "heat_cap": 8,
+        "repair_cap": 4,
+        "attack_bonus": 2,
+        "tech_attack_bonus": 1,
+        "limited_systems_bonus": 1,
+        "speed": 5,
+        "evasion": 8,
+        "edefense": 8,
+        "sensors": 15,
+        "save_dc": 12,
+        "weapons": [
+            "Missile Rack",
+            "Missile Rack",
+            "Sharanga Missiles",
+            "Gandiva Missiles"
+        ],
+        "systems": [
+          "Lotus Projector",
+          "Javelin Rockets",
+          "Type-3 Projected Shield"
+        ]
+      }
+    }
+  }
+  

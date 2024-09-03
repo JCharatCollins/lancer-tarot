@@ -1,0 +1,66 @@
+{
+    "share_code": "I66QXL",
+    "name": "Solomon Corliss",
+    "callsign": "THE MAGICIAN",
+    "skill_triggers": [
+      {"name": "Charm", "level": 4},
+      {"name": "Hack or Fix", "level": 4},
+      {"name": "Invent or Create", "level": 2},
+      {"name": "Investigate", "level": 2},
+      {"name": "Show Off", "level": 2}
+    ],
+    "gear": [
+      "Mobility Hardsuit",
+      "Medium A/C",
+      "Light A/C",
+      "Personal Drone",
+      "Camo Cloth",
+      "Subjectivity-Enhancement Suite"
+    ],
+    "licenses": [
+      {"name": "HA Napoleon", "level": 2},
+      {"name": "SSC Metalmark", "level": 1}
+    ],
+    "core_bonuses": [
+      "Superheavy Mounting"
+    ],
+    "talents": [
+      {"name": "Leader", "level": 3},
+      {"name": "Spotter", "level": 3}
+    ],
+    "mech": {
+      "name": "AS ABOVE, SO BELOW",
+      "frame": "HA Napoleon",
+      "quote": "",
+      "pilot_stats": [3, 0, 0, 2],
+      "size": 0.5,
+      "core_system": "Trueblack Aegis",
+      "mech_stats": {
+        "structure": 4,
+        "stress": 4,
+        "hp": 14,
+        "armor": 2,
+        "heat_cap": 10,
+        "repair_cap": 4,
+        "attack_bonus": 2,
+        "tech_attack_bonus": 0,
+        "limited_systems_bonus": 1,
+        "speed": 4,
+        "evasion": 8,
+        "edefense": 8,
+        "sensors": 5,
+        "save_dc": 13,
+        "weapons": [
+          "Hurricane Cluster Projector"
+        ],
+        "systems": [
+          "Reactive Weave",
+          "Stasis Generator",
+          "Stasis Barrier",
+          "Stasis Bolt",
+          "Turret Drones",
+          "Armament Redundancy"
+        ]
+      }
+    }
+  }

@@ -1,0 +1,68 @@
+{
+    "share_code": "ZFVZ92",
+    "name": "Hayat Whistle",
+    "callsign": "THE HERMIT",
+    "skill_triggers": [
+      { "name": "Act Unseen or Unheard", "level": 4 },
+      { "name": "Get Somewhere Quickly", "level": 2 },
+      { "name": "Read a Situation", "level": 4 },
+      { "name": "Spot", "level": 2 },
+      { "name": "Stay Cool", "level": 2 }
+    ],
+    "gear": [
+      "Light Hardsuit",
+      "Archaic Melee",
+      "Medium Signature",
+      "Extra Rations",
+      "Flexsuit",
+      "Wilderness Survival Kit"
+    ],
+    "licenses": [
+      { "name": "HA Genghis", "level": 2 },
+      { "name": "SSC Black Witch", "level": 1 }
+    ],
+    "core_bonuses": [
+      "Mount Retrofitting"
+    ],
+    "talents": [
+      { "name": "Nuclear Cavalier", "level": 3 },
+      { "name": "Vanguard", "level": 3 }
+    ],
+    "mech": {
+      "name": "FARENHEIT 450",
+      "frame": "HA “Worldkiller” Genghis Mk I",
+      "quote": "\"...and behold, the Secret Fire burnt at the heart of the world.\"\n-J.R.R. Tolkien, The Silmarillion",
+      "pilot_stats": [3, 2, 0, 0],
+      "size": 2,
+      "core_system": "Juggernaut Reactor",
+      "mech_stats": {
+        "structure": 4,
+        "stress": 4,
+        "hp": 14,
+        "armor": 3,
+        "heat_cap": 8,
+        "repair_cap": 5,
+        "attack_bonus": 2,
+        "tech_attack_bonus": -2,
+        "limited_systems_bonus": 0,
+        "speed": 4,
+        "evasion": 8,
+        "edefense": 8,
+        "sensors": 5,
+        "save_dc": 12,
+        "weapons": [
+          "Fuel Rod Gun",
+          "Charged Blade",
+          "Magnetic Cannon // Thermal Pistol",
+          "Krakatoa Thermobaric Flamethrower"
+        ],
+        "systems": [
+          "Ferrous Lash",
+          "Explosive Vents",
+          "Armament Redundancy",
+          "HAVOK Charges"
+        ]
+      }
+    }
+  }
+  

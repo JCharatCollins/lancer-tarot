@@ -1,0 +1,67 @@
+{
+    "share_code": "OLMBCM",
+    "name": "Mina Rhoe",
+    "callsign": "TEMPERANCE",
+    "skill_triggers": [
+      {"name": "Get a Hold of Something", "level": 4},
+      {"name": "Patch", "level": 6},
+      {"name": "Spot", "level": 2},
+      {"name": "Stay Cool", "level": 2}
+    ],
+    "gear": [
+      "Assault Hardsuit",
+      "Medium Signature",
+      "Medium A/C",
+      "Frag Grenades",
+      "Patch",
+      "Omnihook"
+    ],
+    "licenses": [
+      {"name": "SSC Black Witch", "level": 2},
+      {"name": "HA Sunzi", "level": 1}
+    ],
+    "core_bonuses": [
+      "Overpower Caliber"
+    ],
+    "talents": [
+      {"name": "Technophile", "level": 3},
+      {"name": "Empath", "level": 2},
+      {"name": "Walking Armory", "level": 1}
+    ],
+    "mech": {
+      "name": "TEMPERANCE",
+      "frame": "SSC Black Witch",
+      "quote": "",
+      "pilot_stats": [3, 0, 2, 0],
+      "size": 1,
+      "core_system": "Magnetic Field Projector",
+      "mech_stats": {
+        "structure": 4,
+        "stress": 4,
+        "hp": 14,
+        "armor": 1,
+        "heat_cap": 6,
+        "repair_cap": 4,
+        "attack_bonus": 2,
+        "tech_attack_bonus": 2,
+        "limited_systems_bonus": 0,
+        "speed": 5,
+        "evasion": 10,
+        "edefense": 14,
+        "sensors": 15,
+        "save_dc": 13,
+        "weapons": [
+          "Magnetic Cannon // Thermal Pistol \n(Overpower Caliber)"
+        ],
+        "systems": [
+          "Ammo Case I",
+          "Perimeter Command Plate",
+          "Accelerate",
+          "Ferrous Lash",
+          "ICEOUT Drone",
+          "Blink Charges"
+        ]
+      }
+    }
+  }
+  

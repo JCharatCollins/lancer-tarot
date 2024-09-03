@@ -1,0 +1,86 @@
+{
+    "share_code": "XDOKKI",
+    "name": "Rosabelle June",
+    "callsign": "WHEEL OF FORTUNE",
+    "skill_triggers": [
+        {
+            "name": "Charm",
+            "level": 2 
+        },
+        {
+            "name": "Invent or Create",
+            "level": 2
+        },
+        {
+            "name": "Survive",
+            "level": 4
+        },
+        {
+            "name": "Word on the Street",
+            "level": 6
+        }
+    ],
+    "gear": [
+      "Assault Hardsuit",
+      "Heavy Signature",
+      "Heavy Signature",
+      "Frag Grenades",
+      "Tertiary Arm",
+      "Stims"
+    ],
+    "licenses": [
+        {"name": "HORUS Pegasus", "level": 3}
+    ],
+    "talents": [
+        {
+            "name": "Siege Specialist",
+            "level": 2
+        },
+        {
+            "name": "Stormbringer",
+            "level": 2
+        },
+        {
+            "name": "Walking Armory",
+            "level": 2
+        }
+    ],
+    "core_bonuses": [
+      "Auto-Stabilizing Hardpoints"
+    ],
+    "mech": {
+      "name": "PENNIES FROM HEAVEN",
+      "quote": "\"And every gambler knows that to lose /\n Is what you're really there for\"\n-U2, Every Breaking Wave",
+      "frame": "HORUS Pegasus",
+      "size": 1,
+      "core_system": "Ushabti Omnigun",
+      "pilot_stats": [3, 2, 0, 0],
+      "mech_stats": {
+        "structure": 4,
+        "hp": 16,
+        "armor": 0,
+        "stress": 4,
+        "heat_cap": 6,
+        "repair_cap": 4,
+        "attack_bonus": 2,
+        "tech_attack_bonus": 1,
+        "limited_systems_bonus": 0,
+        "speed": 5,
+        "evasion": 10,
+        "edefense": 10,
+        "sensors": 10,
+        "save_dc": 12,
+        "weapons": [
+            "Autogun",
+            "Smartgun",
+            "Mimic Gun \n(Auto-Stabilizing Hardpoints)"
+        ],
+        "systems": [
+          "Ammo Case II",
+          "SISYPHUS-Class NHP",
+          "Eye of HORUS",
+          "Armament Redundancy"
+        ]
+      }
+    }
+  }  

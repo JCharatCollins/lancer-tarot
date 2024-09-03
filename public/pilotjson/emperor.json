@@ -1,0 +1,69 @@
+{
+    "share_code": "JG7MT9",
+    "name": "Katsuyoshi Fillion VI",
+    "callsign": "THE EMPEROR",
+    "skill_triggers": [
+        {"name": "Charm", "level": 2},
+        {"name": "Lead or Inspire", "level": 4},
+        {"name": "Pull Rank", "level": 4},
+        {"name": "Read a Situation", "level": 2},
+        {"name": "Survive", "level": 2}
+    ],
+    "gear": [
+        "Light Hardsuit",
+        "Archaic Melee",
+        "Medium Signature",
+        "Wilderness Survival Kit",
+        "Personal Drone",
+        "Flexsuit"
+    ],
+    "licenses": [
+        {"name": "HA Saladin", "level": 2},
+        {"name": "IPS-N Zheng", "level": 1}
+    ],
+    "core_bonuses": [
+        "Improved Armament"
+    ],
+    "talents": [
+        {"name": "Exemplar", "level": 3},
+        {"name": "Crack Shot", "level": 1},
+        {"name": "Leader", "level": 1},
+        {"name": "Bonded", "level": 1}
+    ],
+    "mech": {
+        "name": "YON",
+        "frame": "HA Saladin",
+        "quote": "",
+        "pilot_stats": [2, 2, 0, 1],
+        "size": 2,
+        "core_system": "Tachyon Loop",
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 18,
+            "armor": 1,
+            "heat_cap": 9,
+            "repair_cap": 5,
+            "attack_bonus": 2,
+            "tech_attack_bonus": 0,
+            "limited_systems_bonus": 0,
+            "speed": 4,
+            "evasion": 8,
+            "edefense": 8,
+            "sensors": 10,
+            "save_dc": 12,
+            "weapons": [
+                "Tiger-Hunter Combat Sheathe",
+                "Assault Rifle"
+            ],
+            "systems": [
+                "Total Strength Suite I",
+                "Pattern-A Jericho Deployable Cover",
+                "Hardlight Defense System",
+                "ENCLAVE-Pattern Support Shield",
+                "Flash Anchor",
+                "Armament Redundancy"
+            ]
+        }
+    }
+}

@@ -13,6 +13,8 @@
 
 .frameTitle {
     z-index: 2;
+    position: relative;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,20 +24,24 @@
 
 .frameTitle h2 {
     z-index: 3;
-    position: absolute;
+    position: relative;
+    width: 60vw;
     text-align: center;
     text-shadow: 5px 0px var(--text-shadow-hex);
-    font-size: 10rem;
+    font-size: 9vw;
     padding: 5px;
     border-bottom: 5px solid rgba(var(--callout-border-rgb), 0.8);
 }
 
 .cardImage {
-    z-index: 2;
-    opacity: 0.8;
-    width: 20vw;
-    height: auto;
-    object-fit: contain;
+    z-index: -999;
+    position: absolute;
+    top: 50vh;
+    right: 0;
+    bottom: 0vh;
+    left: 30vw;
+    opacity: 0.5;
+    transform: translateZ(-7px) scale(5);
 }
 
 .pilotBlock {
@@ -44,11 +50,13 @@
 }
 
 .quoteHeader {
+    position: relative;
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
 .quoteHeader h2 {
+    position: relative;
     text-align: left;
     font-style: italic;
     font-size: 1rem;
@@ -201,12 +209,12 @@
 .mechBlock {
     position: relative;
     display: flex;
+    width: 80%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-top: 40px;
     border-top: 5px solid rgba(var(--callout-border-rgb), 0.8);
-    width: 80%;
 }
 
 .mechTitle {
@@ -253,10 +261,11 @@
 }
 
 .mechStatBlock {
-    height: 15vh;
+    height: fit-content;
     width: 15vw;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
     clip-path: polygon(100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,0 100%,0 0);
@@ -271,7 +280,6 @@
 }
 
 .mechStatBlockText {
-    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -281,10 +289,28 @@
 }
 
 .mechStatBlockText p {
+    height: fit-content;
     font-family: var(--font-mono);
     font-weight: bolder;
     font-size: 2.5rem;
     padding: 10px;
+}
+
+.frameImageContainer {
+    height: 900px;
+    width: 900px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frameImage {
+    z-index: -1;
+    position: absolute;
+    object-fit: scale-down;
+    overflow-x: visible;
 }
 
 .coreSystem {
@@ -295,22 +321,79 @@
     border-radius: 30px;
     padding: 20px;
     border: 5px solid rgb(var(--callout-border-rgb));
-    margin-bottom: 20px;
 }
 
 .coreSystem h3 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     text-shadow: 5px 0px var(--text-shadow-hex);
+    text-align: center;
+}
+
+.mechWeapons {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.mechWeaponBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(var(--panel-text-rgb), 0.5);
+    border-top: 5px solid rgba(var(--callout-border-rgb), 0.8);
+    clip-path: polygon(100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,0 100%,0 0);
+    margin-bottom: 20px;
+}
+
+.mechWeaponBlock h3 {
+    color: rgb(var(--callout-border-rgb));
+}
+
+.mechSystems {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.mechSystemBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(var(--callout-border-rgb), 0.5);
+    border-top: 5px solid rgba(var(--callout-border-rgb), 0.8);
+    clip-path: polygon(100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,0 100%,0 0);
+    margin-bottom: 20px;
+}
+
+.mechSystemBlock h3 {
+    color: rgb(var(--callout-border-rgb));
 }
 
 .main {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 6rem;
-    min-height: 100vh;
 }
 
 .maContainer {

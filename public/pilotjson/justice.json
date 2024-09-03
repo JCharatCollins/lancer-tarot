@@ -1,0 +1,64 @@
+{
+    "share_code": "BQCW27",
+    "name": "Profira Windes",
+    "callsign": "JUSTICE",
+    "skill_triggers": [
+        { "name": "Investigate", "level": 6 },
+        { "name": "Survive", "level": 2 },
+        { "name": "Take Someone Out", "level": 4 },
+        { "name": "Threaten", "level": 2 }
+    ],
+    "gear": [
+        "Heavy Hardsuit",
+        "Heavy A/C",
+        "Light Signature",
+        "Corrective",
+        "Patch",
+        "Antiphoton Visor"
+    ],
+    "licenses": [
+        { "name": "SSC White Witch", "level": 3 }
+    ],
+    "core_bonuses": [
+        "Overpower Caliber"
+    ],
+    "talents": [
+        { "name": "House Guard", "level": 3 },
+        { "name": "Duelist", "level": 3 }
+    ],
+    "mech": {
+        "name": "SWORD AND SCALE",
+        "frame": "SSC White Witch",
+        "quote": "\"'Well, anyway,' he said, 'suppose they did not let you stand against all the evil in the world?'\n'I could ask,' said the Wart.\n'You could ask,' repeated Merlyn.\"\n-T.H. White, The Once and Future King",
+        "pilot_stats": [2, 2, 0, 1],
+        "size": 2,
+        "core_system": "Ferroreactive Shell",
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 15,
+            "armor": 0,
+            "heat_cap": 5,
+            "repair_cap": 6,
+            "attack_bonus": 2,
+            "tech_attack_bonus": 0,
+            "limited_systems_bonus": 0,
+            "speed": 7,
+            "evasion": 12,
+            "edefense": 6,
+            "sensors": 5,
+            "save_dc": 13,
+            "weapons": [
+                "Ferrofluid Lance \n(Overpower Caliber)",
+                "Retort Loop"
+            ],
+            "systems": [
+                "Camus's Razor",
+                "Ferrospike Barrier",
+                "Sympathetic Shield",
+                "Personalizations",
+                "Armament Redundancy"
+            ]
+        }
+    }
+}
