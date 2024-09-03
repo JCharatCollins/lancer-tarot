@@ -82,13 +82,14 @@ export default function Page() {
 
     return (
         <div className={styles.main}>
-            <Head>
-                <link
-                    rel="preload"
-                    href="/tarotcards/cardback.jpg"
-                    as="image"
-                />
-            </Head>
+            {/* Dummy image used to preload unrendered cardback image */}
+            <Image
+                style={{display: 'none'}}
+                src={'/tarotcards/cardback.jpg'}
+                alt={'Card back'}
+                fill
+                priority
+            />
             <div className={styles.title}>
                 <h3>
                     In order to join the Shuffle Alliance, you must first...
