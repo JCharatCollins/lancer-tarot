@@ -12,24 +12,23 @@ export default function Page({ params }: { params: { card: string } }) {
     
     useEffect(() => {
         const controller = new AbortController();
-        const signal = controller.signal;
-        
-            fetch('../pilotjson/' + params.card + '.json', {
+        const signal = controller.signal;  
+        fetch('../pilotjson/' + params.card + '.json', {
             signal: signal
-            })
-            .then((response) => response.json())
-            .then((response) => {
+        })
+        .then((response) => response.json())
+        .then((response) => {
             setPilotData(response)
-            })
-            .catch((err) => {
+        })
+        .catch((err) => {
             if (err.name === 'AbortError') {
                 console.log('aborted pilotdata request');
             }
-            });
+        });
         return () => {
             controller.abort();
         };
-    });
+    }, []);
 
     return (
         <div className={styles.main}>
