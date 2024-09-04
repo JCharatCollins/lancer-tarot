@@ -27,7 +27,11 @@ export default function Page() {
         </h2>
         <div className={styles.panelText}>
           <p>
-            Test
+            Tarot cards were originally used much as &quot;normal&quot; playing cards are today;
+            that is, to play card games. They later began to develop various spiritual meanings through
+            the work of &quot;scholars&quot; such as Dr. Arthur Edward Waite, whose work in the late 19th
+            and early 20th centuries solidified the ideas behind Tarot cards as tools for fortune-telling and
+            other occult purposes.
           </p>
         </div>
       </div>

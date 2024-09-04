@@ -52,8 +52,14 @@
 
 .panelText {
   width: 100%;
-  background-color: rgba(var(--panel-text-rgb), 0.8);
+  background-color: rgba(var(--panel-text-rgb), 1.0);
   padding: 10px;
+}
+
+.panelText p {
+  font-family: var(--font-mono);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .sidebar {
