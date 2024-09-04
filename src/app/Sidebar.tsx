@@ -33,6 +33,7 @@ export default function Sidebar() {
                         alt={imageAltText}
                         height={40}
                         width={40}
+                        priority
                     />
                 </a>
                 {isCurrent ?

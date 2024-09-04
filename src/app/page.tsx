@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'LANCER Tarot',
-  description: '...',
+  description: 'Home of the Shuffle Alliance, 22 LANCER Pilots based on the Major Arcana of the Rider-Waite Tarot.',
 }
 
 export default function Page() {

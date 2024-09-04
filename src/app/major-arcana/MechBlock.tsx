@@ -82,6 +82,7 @@ export default function MechBlock({ mechData } : {mechData: MechData}) {
                     className={styles.frameImage}
                     src={'/frames/' + mechData.frame + '.png'}
                     alt={mechData.frame}
+                    priority
                     fill
                 />
                 <div className={styles.coreSystem}>

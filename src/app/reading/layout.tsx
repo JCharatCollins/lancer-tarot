@@ -3,7 +3,7 @@ import "../globals.css";
 
 export const metadata: Metadata = {
     title: 'LANCER Tarot | READINGS',
-    description: '...',
+    description: 'Learn your fate as a member of the Shuffle Alliance.',
 }
 
 export default function RootLayout({

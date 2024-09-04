@@ -3,7 +3,7 @@ import "../globals.css";
 
 export const metadata: Metadata = {
   title: 'LANCER Tarot | MAJOR ARCANA',
-  description: '...',
+  description: 'View all 22 leaders of the Shuffle Alliance.',
 }
 
 export default function RootLayout({
