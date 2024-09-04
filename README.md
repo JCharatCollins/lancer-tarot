@@ -16,8 +16,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Future steps:
 
-Finish implementation of dynamic routing for 22 major arcana frames.
+Finish the home page!
 
-Create interactive Tarot reading page.
+Actually finish the last 6-ish Tarot card builds and import the data.
 
-Finish introduction page.
+Popularity analytics/comment section/difficulty ratings/reviews? Would need to use Azure DB for backend but a basic PostgresSQL DB is not hard to set up.
+
+Responsive design--lot of CSS work needs to be done to get this running nicely on mobile.
+
+Light mode!
