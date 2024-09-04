@@ -1,15 +1,18 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from './page.module.css'
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-// :(((
-const darkMode = window.matchMedia("(prefers-color-scheme: dark)")
-
 export default function Sidebar() {
     const [sidebarOpen, setSideBarOpen] = useState(false);
+
+    const [darkMode, setDarkMode] = useState<MediaQueryList | undefined>(undefined)
+
+    useEffect(() => {
+        setDarkMode(window.matchMedia("(prefers-color-scheme: dark)"))
+    }, []);
 
     function SidebarItem(text: string, imagePath: string, imageAltText: string, link: string) {
         const path = usePathname()
@@ -34,7 +37,7 @@ export default function Sidebar() {
                 </a>
                 {isCurrent ?
                 // HACKY BULLSHIT, CLEAN UP
-                <h2 style={sidebarOpen ? (darkMode.matches ? { display: 'block', filter: 'invert(0)'} : { display: 'block' }) : {display: 'none'}}>
+                <h2 style={sidebarOpen ? (darkMode?.matches ? { display: 'block', filter: 'invert(0)'} : { display: 'block' }) : {display: 'none'}}>
                     {text}
                 </h2>
                 : 
