@@ -46,7 +46,7 @@ export default function Sidebar() {
 
     return (
         <nav className={style.sidebar} style={{ width: sidebarOpen === false ? 70 : 300 }} onMouseLeave={() => setSideBarOpen(false)}>
-            {SidebarItem('Major Arcana', '/tarot.png', 'Major Arcana', '')}
+            {SidebarItem('Major Arcana', '/tarot.png', 'Major Arcana', '/major-arcana')}
             {SidebarItem('Home', '/spellbook.png', 'Home', '/')}
             {SidebarItem('Get A Reading', '/fortuneteller.png', 'Get a reading', '/reading')}
         </nav>

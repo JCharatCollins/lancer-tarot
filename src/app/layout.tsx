@@ -2,7 +2,7 @@
 
 import { Arimo } from "next/font/google";
 import "./globals.css";
-import Sidebar from "./sidebar";
+import Sidebar from "./Sidebar";
 
 const inter = Arimo({ subsets: ["latin"] });
 

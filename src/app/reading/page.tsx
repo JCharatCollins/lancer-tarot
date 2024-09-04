@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import styles from './page.module.css'
 import Image from 'next/image'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const majorArcana = [
     'fool',
@@ -12,7 +12,7 @@ const majorArcana = [
     'empress',
     'emperor',
     'hierophant',
-    'Lovers',
+    'lovers',
     'chariot',
     'strength',
     'hermit',
@@ -45,11 +45,37 @@ export default function Page() {
 
     const [cards, setCards] = useState<string[]>([])
 
+    const [cardExplanation, setCardExplanation] = useState<string>('')
+
+    async function getCardExplanation (cardName: string) {
+        console.log(cardName)
+        const selectedCardNum = majorArcana.indexOf(cardName)
+
+        const controller = new AbortController();
+        const signal = controller.signal;  
+
+        fetch(selectedCardNum === 0 ? 'https://tarotapi.dev/api/v1/cards/search?value=ZERO' : 'https://tarotapi.dev/api/v1/cards/search?value=' + selectedCardNum.toString(), {
+            signal: signal
+        })
+        .then((response) => response.json())
+        .then((response) => {
+            let meaning: string = response.cards[0].meaning_up;
+            if (meaning.charAt(meaning.length - 1) === ',') {
+                setCardExplanation(meaning.substring(0, meaning.length - 1) + '.')
+            } else {
+                setCardExplanation(meaning)
+            }
+        })
+        .catch((err) => {
+            if (err.name === 'AbortError') {
+                console.log('aborted pilotdata request');
+            }
+        });
+    }
+
     function getReading () {
         const chosen = getRandomSubarray(majorArcana, 3)
         setCards(chosen)
-        console.log(chosen)
-        console.log(cards)
     }
 
     function flippableCard (cardName : string) {
@@ -57,7 +83,12 @@ export default function Page() {
             <div className={styles.cardOptions}>
                 <div className={styles.flipCard} tabIndex={1}>
                     <div className={styles.flipCardInner}>
-                        <div className={styles.flipCardFront}>
+                        <div 
+                            className={styles.flipCardFront}
+                            onClick={() => {
+                                getCardExplanation(cardName);
+                            }}
+                        >
                             <Image
                                 src={'/tarotcards/cardback.jpg'}
                                 alt={'Card back'}
@@ -191,7 +222,7 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            <div style={cards.length === 0 ? {} : {display: 'none'}}className={styles.getReadingContainer}>
+            <div style={cards.length === 0 ? {} : {display: 'none'}} className={styles.getReadingContainer}>
                 <button
                     className={styles.getReadingButton}
                     onClick={() => getReading()}
@@ -214,11 +245,33 @@ export default function Page() {
                     {flippableCard(cards[1])}
                     {flippableCard(cards[2])}
                 </div>
-                <div className={styles.cardExplanations}>
 
-                </div>
+            </div> : null}
+            {cardExplanation.length > 0 ? 
+            <div className={styles.cardExplanations}>
+                <h3>
+                    CARD MEANING: 
+                </h3>
+                <p>
+                    {cardExplanation}
+                </p>
+            </div> : null}
+            <div style={cards.length === 0 ? {display: 'none'} : {}} className={styles.getReadingContainer}>
+                <button
+                    className={styles.getReadingButton}
+                    onClick={() => getReading()}
+                >
+                    <Image
+                        src={'/fortuneteller.png'}
+                        alt={'Fortune Teller'}
+                        height={40}
+                        width={40}
+                    />
+                    <h3>
+                        DRAW AGAIN
+                    </h3>
+                </button>
             </div>
-            : null}
         </div>
     );
 }

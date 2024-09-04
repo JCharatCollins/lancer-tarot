@@ -11,6 +11,68 @@
     filter: brightness(1.25);
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    border-bottom: 2px solid rgba(var(--callout-border-rgb), 0.3);
+}
+
+.title h1 {
+    font-size: 5rem;
+    padding: 5px;
+}
+
+.title h3 {
+    font-style: italic;
+    font-size: 0.85rem;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.maListContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.maListItem {
+    width: 100%;
+    background-color: rgba(var(--panel-text-rgb), 0.5);
+    clip-path: polygon(100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,0 100%,0 0);
+    background-repeat: no-repeat;
+    background-position: right 10% top 0%;
+    border-top: 5px solid rgba(var(--callout-border-rgb), 0.8);
+}
+
+.maListItem h2 {
+    z-index: 3;
+    text-align: left;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.maListItem:hover h2 {
+    color: rgb(var(--callout-border-rgb));
+}
+
+.title h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 5px;
+}
+
 .frameTitle {
     z-index: 2;
     position: relative;
@@ -22,7 +84,7 @@
     padding: 5px;
 }
 
-.frameTitle h2 {
+.frameTitle h1 {
     z-index: 3;
     position: relative;
     width: 60vw;

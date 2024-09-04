@@ -48,6 +48,9 @@ export default function Page({ params }: { params: { card: string } }) {
                     <MechBlock mechData={pilotData.mech} />
                 </> :
                 <>
+                    <h1>
+                        Coming soon!
+                    </h1>
                 </>}
             </div>
         </div>
