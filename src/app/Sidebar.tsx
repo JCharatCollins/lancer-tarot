@@ -5,13 +5,15 @@ import style from './page.module.css'
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
+// :(((
+const darkMode = window.matchMedia("(prefers-color-scheme: dark)")
 
 export default function Sidebar() {
     const [sidebarOpen, setSideBarOpen] = useState(false);
 
     function SidebarItem(text: string, imagePath: string, imageAltText: string, link: string) {
         const path = usePathname()
-        const isCurrent = path !== link
+        const isCurrent = path === link
 
         return (
             <div
@@ -23,7 +25,7 @@ export default function Sidebar() {
             >
                 <a href={link}>
                     <Image
-                        style={isCurrent ? { filter: 'invert(0)'} : {}}
+                        style={isCurrent ? { filter: 'invert(1)'} : { filter: 'invert(0)'}}
                         src={imagePath}
                         alt={imageAltText}
                         height={40}
@@ -31,14 +33,15 @@ export default function Sidebar() {
                     />
                 </a>
                 {isCurrent ?
+                // HACKY BULLSHIT, CLEAN UP
+                <h2 style={sidebarOpen ? (darkMode.matches ? { display: 'block', filter: 'invert(0)'} : { display: 'block' }) : {display: 'none'}}>
+                    {text}
+                </h2>
+                : 
                 <h2 style={sidebarOpen ? { display: 'block'} : {display: 'none'}}>
                     <a href={link}>
                         {text}
                     </a>
-                </h2>
-                : 
-                <h2 style={sidebarOpen ? { display: 'block', filter: 'invert(0)'} : {display: 'none', filter: 'invert(0)'}}>
-                    {text}
                 </h2>}
             </div>
         );

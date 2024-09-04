@@ -7,7 +7,7 @@
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 150, 150, 150;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -33,12 +33,22 @@
     #00000010,
     #00000080
   );
-
+  --panel-rgb: 168, 2, 8;
+  --panel-text-rgb: 100, 100, 100;
   --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
+  --callout-border-rgb: 168, 2, 8;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
-  --sidebar-hex: #a80309
+  --sidebar-hex: #a80208
+
+  /* --panel-rgb: 227, 102, 0;
+  --panel-text-rgb: 100, 100, 100;
+  --callout-rgb: 20, 20, 20;
+  --callout-border-rgb: 227, 102, 0;
+  --card-rgb: 100, 100, 100;
+  --card-border-rgb: 200, 200, 200;
+  --sidebar-hex: #e36600;
+  --text-shadow-hex: #e36600 */
 }
 
 @media (prefers-color-scheme: dark) {

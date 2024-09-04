@@ -93,7 +93,6 @@
   height: fit-content;
   overflow: hidden;
   white-space: nowrap;
-  filter: invert(1);
   animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -281,16 +280,8 @@
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
+  .sidebarItem h2 {
     filter: invert(1);
-  }
-
-  .sidebarHamburger img {
-    filter: invert(0)
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 
