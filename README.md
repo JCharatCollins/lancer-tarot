@@ -14,6 +14,10 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Where to visit:
+
+Currently available on [Vercel](https://lancer-tarot.vercel.app/) and [Azure](https://witty-moss-0c8c2ca0f.5.azurestaticapps.net/) (I wanted to try out Azure's student plan).
+
 ## Future steps:
 
 Finish the home page!
