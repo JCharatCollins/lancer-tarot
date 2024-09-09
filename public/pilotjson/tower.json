@@ -1,0 +1,65 @@
+{
+    "share_code": "HR6DNX",
+    "name": "Nacer Depierro",
+    "callsign": "THE TOWER",
+    "skill_triggers": [
+        { "name": "Blow Something Up", "level": 4 },
+        { "name": "Lead or Inspire", "level": 2 },
+        { "name": "Pull Rank", "level": 6 },
+        { "name": "Word on the Street", "level": 2 }
+    ],
+    "gear": [
+        "Heavy Hardsuit",
+        "Heavy A/C",
+        "Heavy Signature",
+        "Smart Scope",
+        "Antiphoton Visor",
+        "Thermite Charge"
+    ],
+    "licenses": [
+        { "name": "HA Barbarossa", "level": 3 }
+    ],
+    "core_bonuses": [
+        "Auto-Stabilizing Hardpoints"
+    ],
+    "talents": [
+        { "name": "Siege Specialist", "level": 3 },
+        { "name": "Nuclear Cavalier", "level": 2 },
+        { "name": "Drone Commander", "level": 1 }
+    ],
+    "mech": {
+        "name": "LA FOUDRE",
+        "frame": "HA Barbarossa",
+        "quote": "\"And He said to them, 'I watched Satan fall from heaven like lightning.'\"\n-Luke 10:18",
+        "pilot_stats": [2, 2, 0, 1],
+        "size": 3,
+        "core_system": "Apocalypse Rail",
+        "mech_stats": {
+            "structure": 4,
+            "stress": 4,
+            "hp": 18,
+            "armor": 2,
+            "heat_cap": 9,
+            "repair_cap": 5,
+            "attack_bonus": 2,
+            "tech_attack_bonus": -2,
+            "limited_systems_bonus": 0,
+            "speed": 3,
+            "evasion": 8,
+            "edefense": 6,
+            "sensors": 10,
+            "save_dc": 12,
+            "weapons": [
+                "Apocalypse Rail",
+                "Rocket-Propelled Grenade",
+                "Siege Cannon \n(Auto-Stabilizing Hardpoints)"
+            ],
+            "systems": [
+                "External Ammo Feed",
+                "Autoloader Drone",
+                "Siege Stabilizers",
+                "Personalizations"
+            ]
+        }
+    }
+}
