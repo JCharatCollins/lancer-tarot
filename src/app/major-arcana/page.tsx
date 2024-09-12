@@ -9,7 +9,7 @@ const majorArcana = [
     'empress',
     'emperor',
     'hierophant',
-    'Lovers',
+    'lovers',
     'chariot',
     'strength',
     'hermit',
