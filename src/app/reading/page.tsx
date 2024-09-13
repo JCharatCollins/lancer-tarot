@@ -24,10 +24,10 @@ const majorArcana = [
     'devil',
     'tower',
     'star',
-    'moon',
-    'sun',
-    'judgement',
-    'world'
+    // 'moon',
+    // 'sun',
+    // 'judgement',
+    // 'world'
 ]
 
 function getRandomSubarray(arr : any[], size: number) {
