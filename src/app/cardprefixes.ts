@@ -13,7 +13,8 @@ const prefixes = [
     'MAGICIAN',
     'CHARIOT',
     'DEVIL',
-    'LOVERS'
+    'LOVERS',
+    'STAR'
 ]
 
 export default prefixes

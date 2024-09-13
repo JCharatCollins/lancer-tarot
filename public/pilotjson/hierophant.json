@@ -51,8 +51,7 @@
         "sensors": 15,
         "save_dc": 12,
         "weapons": [
-            "Missile Rack",
-            "Missile Rack",
+            "Missile Rack // Missile Rack",
             "Sharanga Missiles",
             "Gandiva Missiles"
         ],
