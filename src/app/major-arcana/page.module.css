@@ -374,6 +374,7 @@
     position: absolute;
     object-fit: scale-down;
     overflow-x: visible;
+    opacity: 100%;
 }
 
 .coreSystem {
